@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{F226B6DF-08A3-4BF5-8557-275A09AB086C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples", "Samples\Samples.csproj", "{D5B4763A-3841-4D19-BF95-23529CCE8C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.Tests", "Gateway.Tests\Gateway.Tests.csproj", "{24B8D04F-6862-467D-8438-A804914F9335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F226B6DF-08A3-4BF5-8557-275A09AB086C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F226B6DF-08A3-4BF5-8557-275A09AB086C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F226B6DF-08A3-4BF5-8557-275A09AB086C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F226B6DF-08A3-4BF5-8557-275A09AB086C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B4763A-3841-4D19-BF95-23529CCE8C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B4763A-3841-4D19-BF95-23529CCE8C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B4763A-3841-4D19-BF95-23529CCE8C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B4763A-3841-4D19-BF95-23529CCE8C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B8D04F-6862-467D-8438-A804914F9335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B8D04F-6862-467D-8438-A804914F9335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B8D04F-6862-467D-8438-A804914F9335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B8D04F-6862-467D-8438-A804914F9335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8154B069-6C8B-4CAE-9285-E91D657F94E7}
+	EndGlobalSection
+EndGlobal
