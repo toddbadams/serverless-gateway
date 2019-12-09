@@ -6,6 +6,5 @@ namespace Gateway.Middleware
     public abstract class MiddlewareBase
     {
         public abstract Task InvokeAsync(Context httpContext);
-        public MiddlewareBase Next { get; set; }
     }
 }

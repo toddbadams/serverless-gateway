@@ -9,8 +9,6 @@ namespace Gateway.Application.Pipelines
     public class Context
     {
         private readonly IConfigurationProvider _configurationProvider;
-        private readonly string _downstreamKey;
-        public HttpClient HttpClient { get; }
 
         public Context(HttpRequestMessage request, IConfigurationProvider configurationProvider,
             string key, HttpClient httpClient)
@@ -25,13 +23,15 @@ namespace Gateway.Application.Pipelines
                 Properties.Add("ContentType", string.Join(",", values.ToArray()));
             }
             //Properties.Add("RequestBody", requestBody);
-            _downstreamKey = key;
+            DownstreamKey = key;
             HttpClient = httpClient;
         }
 
         public HttpRequestMessage Request { get; }
         public HttpRequestMessage DownstreamRequest { get; }
         public IDictionary<string, string> Properties { get; }
+        public string DownstreamKey { get; }
+        public HttpClient HttpClient { get; }
 
         public async Task<HttpResponseMessage> SendAsync()
         {
@@ -41,6 +41,6 @@ namespace Gateway.Application.Pipelines
         private string Uri =>
             $"{Value("scheme")}://{Value("host")}:{Value("port")}{Value("route")}";
 
-        private string Value(string name) => _configurationProvider.Get($"{_downstreamKey}-{name}");
+        private string Value(string name) => _configurationProvider.Get($"{DownstreamKey}-{name}");
     }
 }
